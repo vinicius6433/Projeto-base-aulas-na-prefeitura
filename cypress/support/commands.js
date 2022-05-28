@@ -23,3 +23,14 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+// ************************** TXT *******************************
+    Cypress.Commands.add("novosDadosCasoTXT", (dados) => {
+	    cy.writeFile("nomes.txt", dados);
+	    cy.wait(500)
+    });
+    Cypress.Commands.add("escreverDadosCasoTXT", (condicao) => {
+        cy.readFile("nomes.txt").then((text) => {
+            cy.get(condicao).clear().type(text)
+        });
+    });
