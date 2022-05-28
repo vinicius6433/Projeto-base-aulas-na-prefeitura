@@ -1,6 +1,6 @@
     export const ELEMENTS = {
-        nome:'[name="username"]',
-        senha:'[name="password"]',
-        btnEntrar:':nth-child(3) > .sqdOP',
+        nome:'[data-test="username"]',
+        senha:'[data-test="password"]',
+        btnEntrar:'[data-test="login-button"]',
 
     }
