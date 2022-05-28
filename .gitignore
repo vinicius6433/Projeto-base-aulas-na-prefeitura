@@ -6,3 +6,4 @@ package-lock.json
 cypress.json
 nomes.txt
 oficio.txt
+node_modules/.bin/cypress
